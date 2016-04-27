@@ -10,6 +10,7 @@ class FhiclCpp(Package):
     depends_on("boost@1.60:")
     depends_on("doxygen@1.8:")
     depends_on("cetlib@dev:")
+    depends_on("sqlite@3.7.15:")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):
