@@ -2,10 +2,18 @@
 Spack repository for FNAL's Art stack, which comprises:
 
 - cetbuildtools/cetbuildtools2
-- cetlib
-- fhicl-cpp
-- TODO: messagefacility
-- TODO: art
+  - [cetbuildtools2](https://github.com/drbenmorgan/cetbuildtools2.git) is
+    a stripping down version of the upstream [cetbuildtools](https://cdcvs.fnal.gov/redmine/projects/cetbuildtools)
+    package. It provides an identical compiler environment, but strips out
+    hard coded dependencies on FNAL's UPS configuration management system,
+    dependencies installed through UPS, and consequent install hierarchy.
+  - Spack's packaging provides much the same functionality as UPS in terms
+    of telling a build where to locate dependencies, but unlike cetbuildtools/UPS
+    cetbuildtools2 has zero coupling to the package/config management system.
+- [cetlib](https://github.com/drbenmorgan/fnal-cetlib/tree/feature/modern-cmake)
+- [fhicl-cpp](https://github.com/drbenmorgan/fnal-fhicl-cpp/tree/feature/modern-cmake)
+- [messagefacility](https://github.com/drbenmorgan/fnal-messagefacility/tree/feature/modern-cmake)
+- TODO: [art](https://cdcvs.fnal.gov/redmine/projects/art)
 
 At present, forks of these packages are used which provide near full compatibility
 across Linux/GCC and Mac/Clang. This means that only dev versions are used, so no
