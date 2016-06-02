@@ -3,7 +3,7 @@ from spack import *
 class Messagefacility(Package):
     homepage = "https://github.com/drbenmorgan/fnal-messagefacility.git"
 
-    version("dev", git="https://github.com/gartung/fnal-messagefacility.git", branch="features/modern-cmake")
+    version("dev", git="https://github.com/gartung/fnal-messagefacility.git", branch="feature/modern-cmake")
 
     depends_on("cmake@3.3:")
     depends_on("cetbuildtools2")
