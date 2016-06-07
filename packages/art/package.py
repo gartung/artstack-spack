@@ -1,10 +1,11 @@
 from spack import *
 
-class Canvas(Package):
-    homepage = "https://github.com/gartung/fnal-canvas.git"
+class Art(Package):
+    homepage = "https://github.com/gartung/fnal-art.git"
 
-    version("dev", git="https://github.com/gartung/fnal-canvas.git",branch="feature/modern-cmake")
+    version("dev", git="https://github.com/gartung/fnal-art.git",branch="aternate-cmake")
 
+    depends_on("canvas")
     depends_on("cetlib")
     depends_on("fhicl-cpp")
     depends_on("messagefacility")
