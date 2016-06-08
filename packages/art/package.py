@@ -3,7 +3,7 @@ from spack import *
 class Art(Package):
     homepage = "https://github.com/gartung/fnal-art.git"
 
-    version("dev", git="https://github.com/gartung/fnal-art.git",branch="aternate-cmake")
+    version("dev", git="https://github.com/gartung/fnal-art.git",branch="alternate-cmake")
 
     depends_on("canvas")
     depends_on("cetlib")
