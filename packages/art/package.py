@@ -11,7 +11,7 @@ class Art(Package):
     depends_on("messagefacility")
     depends_on("root@6.06.02")
     depends_on("clhep")
-    depends_on("tbb@4.4.3")
+    depends_on("tbb@2015")
     depends_on("cmake@3.5:")
     depends_on("cetbuildtools2")
     depends_on("boost@1.60.0")

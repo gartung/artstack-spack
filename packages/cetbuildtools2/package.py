@@ -3,7 +3,7 @@ from spack import *
 class Cetbuildtools2(Package):
     homepage = "https://github.com/drbenmorgan/cetbuildtools2"
 
-    version("dev", git="https://github.com/gartung/cetbuildtools2.git",branch="develop")
+    version("dev", git="https://github.com/gartung/cetbuildtools2.git",branch="master")
 
     depends_on("cmake@3.3:")
 
