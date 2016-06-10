@@ -8,7 +8,7 @@ class Messagefacility(Package):
     depends_on("cmake@3.5:")
     depends_on("cetbuildtools2")
     depends_on("boost@1.60.0")
-    depends_on("doxygen@1.8:")
+#    depends_on("doxygen@1.8:")
     depends_on("cetlib@dev:")
     depends_on("fhicl-cpp@dev:")
 
