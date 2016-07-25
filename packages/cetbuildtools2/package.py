@@ -5,7 +5,7 @@ class Cetbuildtools2(Package):
 
     version("dev", git="https://github.com/gartung/cetbuildtools2.git",branch="master")
 
-    depends_on("cmake@3.3:")
+    depends_on("cmake@3.3:",type="build")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

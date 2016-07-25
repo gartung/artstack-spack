@@ -11,8 +11,8 @@ class Canvas(Package):
     depends_on("root@6.06.02")
     depends_on("clhep")
     depends_on("tbb@20151115oss")
-    depends_on("cmake@3.5:")
-    depends_on("cetbuildtools2")
+    depends_on("cmake@3.5:",type='build')
+    depends_on("cetbuildtools2",type='build')
     depends_on("boost@1.60.0")
 #    depends_on("doxygen@1.8:")
 
