@@ -3,7 +3,7 @@ from spack import *
 class Canvas(Package):
     homepage = "https://github.com/gartung/fnal-canvas.git"
 
-    version("dev", git="https://github.com/gartung/fnal-canvas.git",branch="feature/modern-cmake")
+    version("dev", git="https://github.com/gartung/fnal-canvas.git",branch="alt-cmake")
 
     depends_on("cetlib")
     depends_on("fhicl-cpp")
