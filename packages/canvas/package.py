@@ -14,7 +14,6 @@ class Canvas(Package):
     depends_on("cmake@3.5:",type='build')
     depends_on("cetbuildtools2",type='build')
     depends_on("boost@1.60.0")
-#    depends_on("doxygen@1.8:")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):
@@ -28,4 +27,3 @@ class Canvas(Package):
             cmake(*cmake_args)
             make("VERBOSE=1")
             make("install")
-
