@@ -5,7 +5,7 @@ class FhiclCpp(Package):
 
     version("dev", git="https://github.com/gartung/fnal-fhicl-cpp.git", branch="feature/modern-cmake")
 
-    depends_on("cmake@3.5:",type="build")
+    depends_on("cmake@3.5",type="build")
     depends_on("cetbuildtools2", type="build")
     depends_on("boost@1.60.0")
 #    depends_on("doxygen@1.8:")

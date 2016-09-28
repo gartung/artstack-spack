@@ -6,7 +6,7 @@ class Cetbuildtools2(Package):
 
     version("0.1", "52b4f84b9fb3dc2ac8dee960c6adbca8")
 
-    depends_on("cmake@3.3:",type="build")
+    depends_on("cmake@3.5",type="build")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):
