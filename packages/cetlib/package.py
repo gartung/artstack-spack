@@ -5,7 +5,6 @@ class Cetlib(Package):
 
     version("dev", git="https://github.com/gartung/fnal-cetlib.git", branch="alt-cmake")
 
-    depends_on("cmake@3.5:",type="build")
     depends_on("cetbuildtools2",type="build")
     depends_on("boost@1.60.0")
 

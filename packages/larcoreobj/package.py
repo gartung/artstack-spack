@@ -11,7 +11,6 @@ class Larcoreobj(Package):
     depends_on("messagefacility")
     depends_on("root@6.06.02")
     depends_on("clhep+cxx14~cxx11")
-    depends_on("cmake@3.5:",type="build")
     depends_on("cetbuildtools2",type="build")
     depends_on("boost@1.60.0")
 
