@@ -8,7 +8,7 @@ class Canvas(Package):
     depends_on("cetlib")
     depends_on("fhicl-cpp")
     depends_on("messagefacility")
-    depends_on("root@6.06.02")
+    depends_on("root@6.06.04")
     depends_on("clhep")
     depends_on("tbb@20151115oss")
     depends_on("cetbuildtools2",type='build')
