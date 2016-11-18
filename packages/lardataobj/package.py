@@ -2,8 +2,8 @@ from spack import *
 
 class Lardataobj(Package):
     homepage = "https://github.com/gartung/fnal-lardataobj.git"
-
-    version("dev", git="https://github.com/gartung/fnal-lardataobj.git",branch="alt-cmake")
+    url = "https://github.com/gartung/fnal-lardataobj/archive/1.02.01.tar.gz"
+    version("1.02.01","4bd99b4dad635c04604517203d958fb4")
 
     depends_on("canvas")
     depends_on("cetlib")

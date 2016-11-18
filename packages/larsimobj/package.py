@@ -2,8 +2,8 @@ from spack import *
 
 class Larsimobj(Package):
     homepage = "https://github.com/gartung/fnal-larsimobj.git"
-
-    version("dev", git="https://github.com/gartung/fnal-larsimobj.git",branch="alt-cmake")
+    url = "https://github.com/gartung/fnal-larsimobj/archive/1.02.01.tar.gz"
+    version("1.02.01","9489d6767836191ef006b796484abc4f")
 
     depends_on("canvas")
     depends_on("cetlib")

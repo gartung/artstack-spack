@@ -2,8 +2,9 @@ from spack import *
 
 class Cetlib(Package):
     homepage = "https://github.com/drbenmorgan/fnal-cetlib.git"
+    url = "https://github.com/gartung/fnal-cetlib/archive/1.20.00.tar.gz"
 
-    version("dev", git="https://github.com/gartung/fnal-cetlib.git", branch="alt-cmake")
+    version("1.20.00", "5b5dae01c77fb242a91a77acd5d079f4")
 
     depends_on("cetbuildtools2",type="build")
     depends_on("cmake",type="build")

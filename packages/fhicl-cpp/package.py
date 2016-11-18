@@ -2,13 +2,13 @@ from spack import *
 
 class FhiclCpp(Package):
     homepage = "https://github.com/drbenmorgan/fnal-fhicl-cpp.git"
+    url = "https://github.com/gartung/fnal-fhicl-cpp/archive/4.01.00.tar.gz"
+    version("4.01.00", "be3704efbf0bfc150f3e6bdd286186e6")
 
-    version("dev", git="https://github.com/gartung/fnal-fhicl-cpp.git", branch="alt-cmake")
-
-    depends_on("cetbuildtools2", type="build")
-    depends_on("cmake", type="build")
+    depends_on("cetbuildtools2")
+    depends_on("cmake")
     depends_on("boost@1.60.0")
-    depends_on("cetlib@dev:")
+    depends_on("cetlib@1.20.00")
     depends_on("sqlite@3.7.15:")
 
     def install(self, spec, prefix):

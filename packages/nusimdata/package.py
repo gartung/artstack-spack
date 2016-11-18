@@ -2,8 +2,9 @@ from spack import *
 
 class Nusimdata(Package):
     homepage = "https://github.com/gartung/fnal-nusimdata.git"
+    url = "https://github.com/gartung/fnal-nusimdata/archive/1.02.01.tar.gz"
 
-    version("dev", git="https://github.com/gartung/fnal-nusimdata.git",branch="alt-cmake")
+    version("1.02.01","a258dca5955343cdf5ae730ca5770f07")
 
     depends_on("canvas")
     depends_on("cetlib")

@@ -2,8 +2,8 @@ from spack import *
 
 class Larcoreobj(Package):
     homepage = "https://github.com/gartung/fnal-larcoreobj.git"
-
-    version("dev", git="https://github.com/gartung/fnal-larcoreobj.git",branch="alt-cmake")
+    url = "https://github.com/gartung/fnal-larcoreobj/archive/1.02.01.tar.gz"
+    version("1.02.01","06d58bd0d7a88f3020f9d6a46e1d45ca")
 
     depends_on("canvas")
     depends_on("cetlib")
