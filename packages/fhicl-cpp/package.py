@@ -6,6 +6,7 @@ class FhiclCpp(Package):
     version("dev", git="https://github.com/gartung/fnal-fhicl-cpp.git", branch="alt-cmake")
 
     depends_on("cetbuildtools2", type="build")
+    depends_on("cmake", type="build")
     depends_on("boost@1.60.0")
     depends_on("cetlib@dev:")
     depends_on("sqlite@3.7.15:")

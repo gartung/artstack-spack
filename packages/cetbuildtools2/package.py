@@ -8,6 +8,8 @@ class Cetbuildtools2(Package):
     version("0.2", "40b9f8ab9cc51ac08e81fecacbca9954")
     version("0.3", "5acab9ad40edf4eb494db3dda4385f89")
 
+    depends_on('cmake@3.5:', type='build')
+
     def install(self, spec, prefix):
         with working_dir('build', create=True):
             cmake_args = std_cmake_args
