@@ -1,5 +1,4 @@
 from spack import *
-import sys
 
 class Canvas(Package):
     homepage = "https://github.com/gartung/fnal-canvas.git"
@@ -11,7 +10,7 @@ class Canvas(Package):
     depends_on("messagefacility")
     depends_on("root@6.06.04")
     depends_on("clhep")
-    if sys.platform == "linux2" : depends_on("cppunit")
+    depends_on("cppunit")
     depends_on("tbb@20151115oss")
     depends_on("cetbuildtools2",type='build')
     depends_on("cmake",type='build')
