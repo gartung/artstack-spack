@@ -2,8 +2,8 @@ from spack import *
 
 class Gallery(Package):
     homepage = "https://github.com/gartung/fnal-gallery.git"
-
-    version("dev", git="https://github.com/gartung/fnal-gallery.git",branch="alt-cmake")
+    url = "https://github.com/gartung/fnal-gallery/archive/1.03.02.tar.gz"
+    version("1.03.02","e576d66b7e0d5af830d2589989027c69")
 
     depends_on("canvas")
     depends_on("cetlib")
