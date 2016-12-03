@@ -12,7 +12,7 @@ class Canvas(Package):
     depends_on("root@6.06.04")
     depends_on("clhep@2.3.2.2+cxx14~cxx11")
     depends_on("cppunit")
-    depends_on("tbb@20151115oss")
+    depends_on("tbb@20160128oss")
     depends_on("boost@1.60.0")
     depends_on("cetbuildtools2",type='build')
     depends_on("cmake",type='build')
