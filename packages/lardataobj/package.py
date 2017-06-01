@@ -1,9 +1,9 @@
 from spack import *
 
 class Lardataobj(Package):
-    homepage = "https://github.com/gartung/fnal-lardataobj.git"
-    url = "https://github.com/gartung/fnal-lardataobj/archive/1.02.01.tar.gz"
-    version("1.02.01","4bd99b4dad635c04604517203d958fb4")
+    homepage = "https://github.com/gartung/fnal-lardataobj"
+    url = "https://github.com/gartung/fnal-lardataobj.git"
+    version("c102c98",git=url,commit="c102c98")
 
     depends_on("canvas")
     depends_on("cetlib")
@@ -11,11 +11,11 @@ class Lardataobj(Package):
     depends_on("messagefacility")
     depends_on("larcoreobj")
     depends_on("nusimdata")
-    depends_on("root@6.06.04")
+    depends_on("root")
     depends_on("clhep+cxx14~cxx11")
     depends_on("cetbuildtools2", type="build")
     depends_on("cmake", type="build")
-    depends_on("boost@1.60.0")
+    depends_on("boost")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

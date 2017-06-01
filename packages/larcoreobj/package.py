@@ -1,19 +1,21 @@
 from spack import *
 
 class Larcoreobj(Package):
-    homepage = "https://github.com/gartung/fnal-larcoreobj.git"
-    url = "https://github.com/gartung/fnal-larcoreobj/archive/1.02.01.tar.gz"
-    version("1.02.01","06d58bd0d7a88f3020f9d6a46e1d45ca")
+    homepage = "https://github.com/gartung/fnal-larcoreobj"
+
+    url = "https://github.com/gartung/fnal-larcoreobj.git"
+
+    version("95722fd", git=url, commit="95722fd")
 
     depends_on("canvas")
     depends_on("cetlib")
     depends_on("fhicl-cpp")
     depends_on("messagefacility")
-    depends_on("root@6.06.04")
-    depends_on("clhep+cxx14~cxx11")
+    depends_on("root")
+    depends_on("clhep~cxx11+cxx14")
     depends_on("cmake",type="build")
     depends_on("cetbuildtools2",type="build")
-    depends_on("boost@1.60.0")
+    depends_on("boost")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

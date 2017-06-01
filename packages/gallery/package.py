@@ -1,9 +1,9 @@
 from spack import *
 
 class Gallery(Package):
-    homepage = "https://github.com/gartung/fnal-gallery.git"
-    url = "https://github.com/gartung/fnal-gallery/archive/1.03.02.tar.gz"
-    version("1.03.02","e576d66b7e0d5af830d2589989027c69")
+    homepage = "https://github.com/gartung/fnal-gallery"
+    url = "https://github.com/gartung/fnal-gallery.git"
+    version("8fa014a",git=url, commit="8fa014a")
 
     depends_on("canvas")
     depends_on("cetlib")
@@ -13,11 +13,11 @@ class Gallery(Package):
     depends_on("lardataobj")
     depends_on("larsimobj")
     depends_on("nusimdata")
-    depends_on("root@6.06.04")
-    depends_on("clhep+cxx14~cxx11")
+    depends_on("root")
+    depends_on("clhep~cxx11+cxx14")
     depends_on("cetbuildtools2",type="build")
     depends_on("cmake",type="build")
-    depends_on("boost@1.60.0")
+    depends_on("boost")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

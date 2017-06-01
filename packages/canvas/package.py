@@ -1,19 +1,19 @@
 from spack import *
 
 class Canvas(Package):
-    homepage = "https://github.com/gartung/fnal-canvas.git"
-    url = "https://github.com/gartung/fnal-canvas/archive/1.04.01.tar.gz"
-    version("1.04.01", "70c0b91d02aa1edde33afeb7ec4d0a5a")
+    homepage = "https://github.com/drbenmorgan/fnal-canvas"
+    url = "https://github.com/gartung/fnal-canvas.git"
+    version("dc1c810", git=url, commit="dc1c810")
 
 
-    depends_on("cetlib@1.20.00")
-    depends_on("fhicl-cpp@4.01.00")
-    depends_on("messagefacility@1.17.02")
-    depends_on("root@6.06.04")
-    depends_on("clhep@2.3.2.2+cxx14~cxx11")
+    depends_on("cetlib")
+    depends_on("fhicl-cpp")
+    depends_on("messagefacility")
+    depends_on("root")
+    depends_on("clhep~cxx11+cxx14")
     depends_on("cppunit")
-    depends_on("tbb@20160128oss")
-    depends_on("boost@1.60.0")
+    depends_on("tbb")
+    depends_on("boost")
     depends_on("cetbuildtools2",type='build')
     depends_on("cmake",type='build')
 

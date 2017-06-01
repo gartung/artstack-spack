@@ -1,21 +1,21 @@
 from spack import *
 
 class Nusimdata(Package):
-    homepage = "https://github.com/gartung/fnal-nusimdata.git"
-    url = "https://github.com/gartung/fnal-nusimdata/archive/1.02.01.tar.gz"
+    homepage = "https://github.com/gartung/fnal-nusimdata"
+    url = "https://github.com/gartung/fnal-nusimdata.git"
 
-    version("1.02.01","a258dca5955343cdf5ae730ca5770f07")
+    version("78ffb55", git=url, commit="78ffb55")
 
     depends_on("canvas")
     depends_on("cetlib")
     depends_on("fhicl-cpp")
     depends_on("messagefacility")
-    depends_on("root@6.06.04")
+    depends_on("root")
     depends_on("clhep+cxx14~cxx11")
-    depends_on("tbb@20160128oss")
+    depends_on("tbb")
     depends_on("cetbuildtools2", type="build")
     depends_on("cmake", type="build")
-    depends_on("boost@1.60.0")
+    depends_on("boost")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

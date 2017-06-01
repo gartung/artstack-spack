@@ -1,15 +1,15 @@
 from spack import *
 
 class Messagefacility(Package):
-    homepage = "https://github.com/gartung/fnal-messagefacility.git"
-    url = "https://github.com/gartung/fnal-messagefacility/archive/1.17.02.tar.gz"
-    version("1.17.02", "b045733b12445c758dedfed240182af3")
+    homepage = "https://github.com/drbenmorgan/fnal-messagefacility"
+    url = "https://github.com/gartung/fnal-messagefacility.git"
+    version("e61f74d",git=url ,commit="e61f74d")
 
     depends_on("cmake", type="build")
     depends_on("cetbuildtools2", type="build")
-    depends_on("boost@1.60.0")
-    depends_on("cetlib@1.20.00")
-    depends_on("fhicl-cpp@4.01.00")
+    depends_on("boost")
+    depends_on("cetlib")
+    depends_on("fhicl-cpp")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

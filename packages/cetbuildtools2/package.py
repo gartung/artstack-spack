@@ -1,12 +1,10 @@
 from spack import *
 
 class Cetbuildtools2(Package):
-    homepage = "https://github.com/gartung/cetbuildtools2"
-    url = "https://github.com/gartung/cetbuildtools2/archive/0.1.tar.gz"
+    homepage = "https://github.com/drbenmorgan/cetbuildtools2"
+    url = "https://github.com/gartung/cetbuildtools2.git"
 
-    version("0.1", "52b4f84b9fb3dc2ac8dee960c6adbca8")
-    version("0.2", "40b9f8ab9cc51ac08e81fecacbca9954")
-    version("0.3", "5acab9ad40edf4eb494db3dda4385f89")
+    version("416bd82", git=url, commit="416bd82")
 
     depends_on('cmake@3.5:', type='build')
 

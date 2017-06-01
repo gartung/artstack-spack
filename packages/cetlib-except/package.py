@@ -1,15 +1,16 @@
 from spack import *
 
-class FhiclCpp(Package):
-    homepage = "https://github.com/drbenmorgan/fnal-fhicl-cpp"
-    url = "https://github.com/gartung/fnal-fhicl-cpp.git"
-    version("e61f74d", git=url, commit="e61f74d")
+class CetlibExcept(Package):
+    homepage = "https://github.com/drbenmorgan/fnal-cetlib_except"
+    url = "https://github.com/gartung/fnal-cetlib_except.git"
 
-    depends_on("cetbuildtools2")
-    depends_on("cmake", type="build")
+    version("8f48b7e",git=url, commit="8f48b7e")
+
+    depends_on("cetbuildtools2",type="build")
+    depends_on("cmake",type="build")
     depends_on("boost")
-    depends_on("cetlib")
     depends_on("sqlite")
+    depends_on("openssl")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):

@@ -1,16 +1,17 @@
 from spack import *
 
 class Cetlib(Package):
-    homepage = "https://github.com/drbenmorgan/fnal-cetlib.git"
-    url = "https://github.com/gartung/fnal-cetlib/archive/1.20.00.tar.gz"
+    homepage = "https://github.com/drbenmorgan/fnal-cetlib"
+    url = "https://github.com/gartung/fnal-cetlib.git"
 
-    version("1.20.00", "5b5dae01c77fb242a91a77acd5d079f4")
+    version("8f918f7", git=url, commit="8f918f7")
 
     depends_on("cetbuildtools2",type="build")
     depends_on("cmake",type="build")
-    depends_on("boost@1.60.0")
-    depends_on("sqlite@3.12.2")
+    depends_on("boost")
+    depends_on("sqlite")
     depends_on("openssl")
+    depends_on("cetlib-except")
 
     def install(self, spec, prefix):
         with working_dir('build', create=True):
